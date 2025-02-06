@@ -1,6 +1,5 @@
-
 /*
-4. Print a diamond shape with numbers and stars.
+26. Print a hollow diamond with numbers and stars.
 
    1
   2*3
@@ -11,7 +10,7 @@
    1
 */
 
-class Question04
+class Question26
 {
 	public static void main(String[] arge)
 	{

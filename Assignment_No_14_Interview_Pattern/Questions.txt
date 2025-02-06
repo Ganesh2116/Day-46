@@ -160,5 +160,1404 @@ Output is :
 
 ==============================================================================
 
+/*
+4. Print a diamond shape with numbers and stars.
 
+   1
+  2*3
+ 4*5*6
+7*8*9*10
+ 4*5*6
+  2*3
+   1
+*/
+
+class Question04
+{
+	public static void main(String[] arge)
+	{
+	int x =1;	
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=4;j>=i;j--)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(x+"*");
+				x++;
+			}
+			else
+			{
+				System.out.print(x++);
+			}
+				
+		}
+		System.out.println();
+	}
+
+	int y =4;	
+	for (int i=3;i>=1;i--)
+	{
+		for (int j=i;j< 3;j++)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		y = y - (i-1)-i;
+		System.out.println();
+
+	}
+
+	}
+
+}
+
+
+Output is :
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+ 4*5*6
+  2*3
+   1
+
+==============================================================================
+
+/*
+5. Print a pyramid with alternating numbers and stars.
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+*/
+
+
+class Question05
+{
+	public static void main(String[] arge)
+	{
+	
+	int n = 1;
+	for (int i=1;i<=7;i+=2)
+	{
+		for (int j=7;j>=i;j-=2)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=i;j>=1;j--)
+		{
+			if (j%2 != 0)
+			System.out.print(n++);
+			else
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+OutPut is :
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+
+
+======================================================================================
+/*
+6. Print an inverted pyramid with alternating numbers and stars.
+
+7*8*9*10
+  4*5*6
+   2*3
+    1
+*/
+
+
+class Question06
+{
+	public static void main(String[] arge)
+	{
+	int y =7;	
+	for (int i=4;i>=1;i--)
+	{
+		for (int j=i;j< 4;j++)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		y = y - (i-1)-i;
+		System.out.println();
+
+	}
+
+
+	}
+}
+
+
+Output is :
+
+7*8*9*10
+  4*5*6
+   2*3
+    1
+======================================================================================
+/*
+7. Print a right-angled triangle with leading spaces, numbers, and stars.
+
+        1
+      2*3
+    4*5*6
+ 7*8*9*10
+
+*/
+
+
+class Question07
+{
+	public static void main(String[] arge)
+	{
+	
+	int n = 1;
+	for (int i=1;i<=7;i+=2)
+	{
+		for (int j=7;j>=i;j-=2)
+		{
+			System.out.print("  ");
+		}
+
+		for (int j=i;j>=1;j--)
+		{
+			if (j%2 != 0)
+			System.out.print(n++);
+			else
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+   	1
+      2*3
+    4*5*6
+ 7*8*9*10
+
+======================================================================================
+/*
+8. Print an inverted right-angled triangle with leading spaces, numbers, and stars.
+
+7*8*9*10
+   4*5*6
+     2*3
+       1
+*/
+
+
+class Question08
+{
+	public static void main(String[] arge)
+	{
+	int y =7;	
+	for (int i=4;i>=1;i--)
+	{
+		for (int j=i;j< 4;j++)
+		{
+			System.out.print("  ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		y = y - (i-1)-i;
+		System.out.println();
+
+	}
+
+
+	}
+}
+
+Output is :
+
+7*8*9*10
+  4*5*6
+    2*3
+      1
+
+======================================================================================
+
+/*
+9. Print a pattern with alternating rows of stars and numbers.
+
+1
+**
+123
+****
+12345
+*/
+
+class Question09
+{
+	public static void main(String[] arge)
+	{
+	for (int i=1;i<=5;i++)
+	{
+		int num = 1;
+		for (int j=1;j<=i;j++)
+		{
+			if (i%2 !=0)
+			System.out.print(num++);
+			else 
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Outout is : 
+
+
+1
+**
+123
+****
+12345
+
+
+===========================================================================================
+/*
+10. Print a pattern with alternating rows of stars and numbers in reverse.
+
+12345
+****
+123
+**
+1
+*/
+
+
+class Question10
+{
+	public static void main(String[] arge)
+	{
+	for (int i=5;i>=1;i--)
+	{
+		int num = 1;
+		for (int j=1;j<=i;j++)
+		{
+			if (i%2 !=0)
+			System.out.print(num++);
+			else 
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+
+12345
+****
+123
+**
+1
+
+===========================================================================================
+
+/* 11. Print a hollow square with numbers and stars on the border.
+
+1*2*3*4*5
+1       5
+1       5
+1       5
+1*2*3*4*5
+
+*/
+
+class Question11
+{
+	public static void main(String[] arge)
+	{
+	for (int i=1;i<=5;i++)
+	{
+		int x = 1;
+		for (int j=1;j<=5;j++)
+		{
+			
+			if (i==1 ||i==5 ||j==1||j==5)
+			{	
+				if (i==1 || i == 5)
+				{		
+					if (j<5)
+					{												System.out.print(x+"*");
+					}
+					else
+					{
+						System.out.print(x);
+					}	
+					x++;
+				}
+				else  if (j==1 || j==5)
+				{
+					if (j == 1)
+						System.out.print("1");	
+					else 
+						System.out.print("5");
+				}
+			}
+			else
+			{
+				System.out.print("  ");
+			}
+
+		}
+		System.out.println();
+	}
+
+	}
+}
+
+
+
+Output is :
+
+1*2*3*4*5
+1      5
+1      5
+1      5
+1*2*3*4*5
+
+
+===========================================================================================
+
+/*
+12. Print a hollow square with numbers and stars in the center.
+
+*****
+*1*2*
+*3*4*
+*5*6*
+*****
+*/
+
+class Question12
+{
+	public static void main(String[] arge)
+	{
+
+	int x = 1;
+	for (int i=1;i<=5;i++)
+	{
+		for (int j=1;j<=5;j++)
+		{
+			if (i== 1 || i== 5)
+			{
+				System.out.print("*");
+			}
+			else if (j%2 == 0)
+			{
+				System.out.print(x++);
+			}
+			else 
+			{
+				System.out.print("*");
+			}
+			
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+*****
+*1*2*
+*3*4*
+*5*6*
+*****
+
+===========================================================================================
+
+
+/*
+13. Print a pattern with a checkerboard of numbers and stars.
+
+1*2*3
+*4*5*
+6*7*8
+*9*0*
+*/
+
+class Question13
+{
+	public static void main(String[] arge)
+	{
+	int x = 1;
+
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=1;j<=5;j++)
+		{
+			if ( x == 10)
+			{
+				x = x-10;
+			}
+
+			if (i%2 == 0)
+			{
+				if (j%2 == 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}
+			else 
+			{	
+				if (j%2 != 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}			
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+
+1*2*3
+*4*5*
+6*7*8
+*9*0*
+
+
+
+===========================================================================================
+
+
+/*14. Print a pattern with diagonal stars and numbers.
+
+1
+*2
+3*
+*4
+5*
+
+*/
+
+
+class Question14
+{
+	public static void main(String[] arge)
+	{
+	int x = 1;
+
+	for (int i=1;i<=5;i++)
+	{
+		for (int j=1;j<=2;j++)
+		{
+			if (i%2 != 0)
+			{
+				if (i == 1)
+				{
+					System.out.print(x++);
+					break;
+				}
+				else if (j%2 != 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}
+			else 
+			{
+				if (j%2 == 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}		
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+1
+*2
+3*
+*4
+5*
+
+
+===========================================================================================
+
+
+/*
+15. Print a pattern with alternating diagonal stars and numbers.
+
+1*
+*2
+3*
+*4
+5*
+
+*/
+
+
+class Question15
+{
+	public static void main(String[] arge)
+	{
+	int x = 1;
+
+	for (int i=1;i<=5;i++)
+	{
+		for (int j=1;j<=2;j++)
+		{
+			if (i%2 != 0)
+			{	
+				if (j%2 != 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}
+			else 
+			{
+				if (j%2 == 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+
+			}		
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+1*
+*2
+3*
+*4
+5*
+
+
+===========================================================================================
+
+/*
+16. Print a right-angled triangle with numbers and stars at the edges.
+
+1
+1*2
+1*2*3
+1*2*3*4
+1*2*3*4*5
+
+*/
+
+
+class Question16
+{
+	public static void main(String[] arge)
+	{	
+	for (int i=1;i<=5;i++)
+	{
+		for (int j=1;j<=i;j++)
+		{
+			if (i == j)
+			{
+				System.out.print(j);
+			}
+			else
+			{
+				System.out.print(j+"*");
+			}
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+
+Output is :
+
+
+1
+1*2
+1*2*3
+1*2*3*4
+1*2*3*4*5
+
+
+==========================================================================================
+
+/*
+17. Print a right-angled triangle with numbers and stars inside.
+
+1
+2*3
+4*5*6
+7*8*9*10
+*/
+
+
+class Question17
+{
+	public static void main(String[] arge)
+	{
+	int x =1;	
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=1;j<=i;j++)
+		{
+			if (i == j )
+			{
+				System.out.print(x++);
+			}
+			else
+			{
+				System.out.print(x+"*");	
+				x++;
+			}
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+1
+2*3
+4*5*6
+7*8*9*10
+
+
+===========================================================================================
+/*
+18. Print a mirrored right-angled triangle with numbers and stars.
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+*/
+
+
+class Question18
+{
+	public static void main(String[] arge)
+	{
+	int x =1;	
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=4;j>=i;j--)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+			if (i == j )
+			{
+				System.out.print(x++);
+			}
+			else
+			{
+				System.out.print(x+"*");	
+				x++;
+			}
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+
+Output is :
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+
+
+===========================================================================================
+
+/*
+19. Print a mirrored inverted right-angled triangle with numbers and stars.
+
+7*8*9*10
+  4*5*6
+   2*3
+    1
+
+*/
+
+
+class Question19
+{
+	public static void main(String[] arge)
+	{
+	int x =7;	
+	for (int i=4;i>=1;i--)
+	{
+		for (int j=i;j< 4;j++)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+			if (i == j )
+			{
+				System.out.print(x);
+			}
+			else
+			{
+				System.out.print(x+"*");	
+				
+			}
+			x++;
+		}
+		 x = x - (i - 1) - i; // x = 7 - (4 -1) - 4 = 0.
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+
+7*8*9*10
+ 4*5*6
+  2*3
+   1
+
+
+===========================================================================================
+
+/*
+20. Print a pattern with numbers on one half and stars on the other.
+
+12345*****
+1234****
+123***
+12**
+1*
+
+*/
+
+
+class Question20
+{
+	public static void main(String[] arge)
+	{
+		for (int i=1;i<=5;i++)
+		{
+			int x = 1;
+			for (int j=i;j<=5;j++)
+			{
+				System.out.print(x++);
+			}
+			for (int j=i;j<=5;j++)
+			{
+				System.out.print("*");
+			}
+
+			System.out.println();
+		}
+	}
+}
+
+
+Output is :
+
+
+12345*****
+1234****
+123***
+12**
+1*
+
+
+===========================================================================================
+
+/*
+21. Print a pattern with stars on one half and numbers on the other.
+
+*****12345
+****1234
+***123
+**12
+*1
+
+*/
+class Question21
+{
+	public static void main(String[] arge)
+	{
+		for (int i=1;i<=5;i++)
+		{
+			int x = 1;
+			
+			for (int j=i;j<=5;j++)
+			{
+				System.out.print("*");
+			}
+
+			for (int j=i;j<=5;j++)
+			{
+				System.out.print(x++);
+			}
+
+			System.out.println();
+		}
+	}
+}
+
+
+
+Output is :
+
+*****12345
+****1234
+***123
+**12
+*1
+
+
+
+===========================================================================================
+
+
+/*
+22. Print a pattern with alternating columns of stars and numbers.
+
+1*2*3*4*5
+6*7*8*9*0
+*/
+
+class Question22
+{
+	public static void main(String[] arge)
+	{
+		int x =1;
+		for (int i=1;i<=2;i++)
+		{
+			for (int j=1;j<=5;j++)
+			{
+				if (x == 10 )
+				{
+					x= 0;
+				}
+				if ( x == 5 || x == 0)
+				{
+					System.out.print(x);
+				}
+				else 
+				{
+					System.out.print(x+"*");
+				}
+				x++;
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+
+Output is :
+
+1*2*3*4*5
+6*7*8*9*0
+
+
+===========================================================================================
+
+
+/*
+23. Print a zigzag pattern with numbers and stars.
+
+1*2
+*3*4
+5*6
+*7*8
+*/
+
+
+class Question23
+{
+	public static void main(String[] arge)
+	{
+	int x = 1;
+
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=1;j<=1;j++)
+		{
+			if (i%2 != 0)
+			{	
+															System.out.print(x+"*");
+				x++;
+				System.out.print(x++);
+
+			}
+			else 
+			{
+				System.out.print("*"+x);
+				x++;
+				System.out.print("*"+x);
+				x++;
+			}		
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+
+Output is :
+
+1*2
+*3*4
+5*6
+*7*8
+
+
+===========================================================================================
+/*
+24. Print a spiral pattern with numbers and stars.
+
+1 2 3 4 5
+* * * * 6
+* * * * 7
+* * * * 8
+* * * * 9
+*/
+
+
+class Question24
+{
+	public static void main(String[] arge)
+	{
+		int x =1;
+		for (int i=1;i<=5;i++)
+		{
+			for (int j=1;j<=5;j++)
+			{
+				if (i == 1 || j == 5)	
+				{
+					System.out.print(x+" ");
+					x++;
+				}
+				else 
+				{
+					System.out.print("*"+" ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+
+Output is :
+
+
+1 2 3 4 5
+* * * * 6
+* * * * 7
+* * * * 8
+* * * * 9
+
+
+===========================================================================================
+
+
+
+===========================================================================================
+
+
+/*
+26. Print a hollow diamond with numbers and stars.
+
+   1
+  2*3
+ 4*5*6
+7*8*9*10
+ 4*5*6
+  2*3
+   1
+*/
+
+class Question26
+{
+	public static void main(String[] arge)
+	{
+	int x =1;	
+	for (int i=1;i<=4;i++)
+	{
+		for (int j=4;j>=i;j--)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(x+"*");
+				x++;
+			}
+			else
+			{
+				System.out.print(x++);
+			}
+				
+		}
+		System.out.println();
+	}
+
+	int y =4;	
+	for (int i=3;i>=1;i--)
+	{
+		for (int j=i;j< 3;j++)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		y = y - (i-1)-i;
+		System.out.println();
+
+	}
+
+	}
+
+}
+
+Output is :
+
+
+    1
+   2*3
+  4*5*6
+ 7*8*9*10
+4*5*6
+ 2*3
+  1
+
+
+===========================================================================================
+
+===========================================================================================
+
+/*
+28. Print a triangular pattern with alternating rows of numbers and stars.
+
+1
+**
+123
+****
+12345
+*/
+
+
+class Question28 
+{
+	public static void main(String[] arge)	
+	{
+		for (int i=1;i<=5;i++)
+		{
+			int x =1;
+			for (int j=1;j<=i;j++)
+			{
+				if (i%2 != 0)
+				{
+					System.out.print(x++);
+				}
+				else 
+				{
+					System.out.print("*");
+				}
+			}
+			System.out.println();
+		}
+	}
+}
+
+Output is :
+
+
+1
+**
+123
+****
+12345
+
+
+===========================================================================================
+
+
+/*
+29. Print a pattern with stars in the shape of a number.
+
+  *
+ **
+***
+ **
+  *
+*/
+
+
+class Question29
+{
+	public static void main(String[] arge)
+	{	
+		for (int i=1;i<=3;i++)
+		{
+			for (int j=3;j>=i;j--)
+			{
+				System.out.print(" ");
+			}
+			
+			for (int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+
+
+		}
+	
+		for (int i=2;i>=1;i--)
+		{
+			for (int j=1;j<3;j++)
+			{
+				System.out.print(" ");
+			}
+			
+			for (int j=1;j<=i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+
+
+		}
+
+
+	}
+
+}
+Output is :
+
+
+   *
+  **
+ ***
+  **
+  *
+
+
+===========================================================================================
+/*
+30. Print a pattern with numbers in the shape of a star.
+
+  1
+ 2*3
+4*5*6
+ 2*3
+  1
+*/
+
+
+class Question30
+{
+	public static void main(String[] arge)
+	{
+	int x =1;	
+	for (int i=1;i<=3;i++)
+	{
+		for (int j=3;j>=i;j--)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(x+"*");
+				x++;
+			}
+			else
+			{
+				System.out.print(x++);
+			}
+				
+		}
+		System.out.println();
+	}
+
+	int y =2;	
+	for (int i=2;i>=1;i--)
+	{
+		for (int j=i;j< 3;j++)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		y = y - (i-1)-i;
+		System.out.println();
+
+	}
+
+	}
+
+}
+
+
+Output is :
+
+
+   1
+  2*3
+ 4*5*6
+ 2*3
+  1
+
+
+===========================================================================================
 

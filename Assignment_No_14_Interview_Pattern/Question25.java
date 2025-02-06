@@ -1,24 +1,22 @@
-
 /*
-4. Print a diamond shape with numbers and stars.
+25. Print a cross pattern with numbers and stars.
 
-   1
-  2*3
- 4*5*6
-7*8*9*10
- 4*5*6
-  2*3
-   1
+  1
+ 2*3
+3*4*5
+ 2*3
+  1
 */
 
-class Question04
+
+class Question25
 {
 	public static void main(String[] arge)
 	{
 	int x =1;	
-	for (int i=1;i<=4;i++)
+	for (int i=1;i<=3;i++)
 	{
-		for (int j=4;j>=i;j--)
+		for (int j=3;j>=i;j--)
 		{
 			System.out.print(" ");
 		}
@@ -39,8 +37,8 @@ class Question04
 		System.out.println();
 	}
 
-	int y =4;	
-	for (int i=3;i>=1;i--)
+	int y =2;	
+	for (int i=2;i>=1;i--)
 	{
 		for (int j=i;j< 3;j++)
 		{
