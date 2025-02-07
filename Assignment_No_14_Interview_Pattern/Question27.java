@@ -19,23 +19,54 @@ class Question27
 		{
 			if (i == 3)
 			{
-				System.out.print(x+"*");
-				x++;
+				if (j != 4 )
+				{
+					System.out.print(x+"*");
+					x++;
+				}
+				else
+				{
+					break;
+				}
+				
 			}
-			else if ( i%2 == 0)
+			else if ( i == 2)
 			{
-				System.out.print("*"+x);
-				x++;
+				if (j == 5)
+				{
+					break;
+				}
+				else
+				{
+					System.out.print("*"+x);
+					x++;	
+				}
+				
 			}
-			else if (j == 5 || i==5)
+			else if ( i == 4)
 			{
-				System.out.print(x++);
+				if (j == 4)
+				{
+					break;
+				}
+				else
+				{
+					System.out.print("*"+x);
+					x++;	
+				}
 				
 			}
 			else
 			{
-				System.out.print(x+"*");
-				x++;
+				if (j== 5)
+				{
+					System.out.print(x++);		
+				}
+				else
+				{
+					System.out.print(x+"*");
+					x++;
+				}
 			}
 		}
 		System.out.println();

@@ -1276,8 +1276,85 @@ Output is :
 
 
 ===========================================================================================
+/*
+25. Print a cross pattern with numbers and stars.
+
+  1
+ 2*3
+3*4*5
+ 2*3
+  1
+*/
 
 
+class Question25
+{
+	public static void main(String[] arge)
+	{
+		
+	for (int i=1;i<=3;i++)
+	{
+		int x = i;
+		for (int j=3;j>=i;j--)
+		{
+			System.out.print(" ");
+		}
+		for (int j=1;j<=i;j++)
+		{
+			
+			if (i != j && i != 1)
+			{
+				System.out.print(x+"*");
+				x++;
+				
+			}
+			else
+			{
+				System.out.print(x++);
+			}
+				
+		}
+		System.out.println();
+	}
+
+		
+	for (int i=2;i>=1;i--)
+	{
+		int y = i;
+		for (int j=i;j< 3;j++)
+		{
+			System.out.print(" ");
+		}
+
+		for (int j=1;j<=i;j++)
+		{
+
+			if (i != j && i != 1)
+			{
+				System.out.print(y+"*");
+				y++;
+			}
+			else
+			{
+				System.out.print(y++);
+			}
+				
+		}
+		System.out.println();
+
+	}
+
+	}
+
+}
+
+Output is :
+
+   1
+  2*3
+ 3*4*5
+ 2*3
+  1
 
 ===========================================================================================
 
@@ -1366,6 +1443,91 @@ Output is :
 
 
 ===========================================================================================
+/*
+27. Print a wave pattern with numbers and stars.
+
+1*2*3*4*5
+*6*7*8*9
+10*11*12*
+*13*14*15
+16*17*18*19*20
+*/
+
+class Question27
+{
+	public static void main(String[] arge)
+	{
+	int x = 1;
+	for (int i=1;i<=5;i++)
+	{
+		for (int j =1;j<=5;j++)
+		{
+			if (i == 3)
+			{
+				if (j != 4 )
+				{
+					System.out.print(x+"*");
+					x++;
+				}
+				else
+				{
+					break;
+				}
+				
+			}
+			else if ( i == 2)
+			{
+				if (j == 5)
+				{
+					break;
+				}
+				else
+				{
+					System.out.print("*"+x);
+					x++;	
+				}
+				
+			}
+			else if ( i == 4)
+			{
+				if (j == 4)
+				{
+					break;
+				}
+				else
+				{
+					System.out.print("*"+x);
+					x++;	
+				}
+				
+			}
+			else
+			{
+				if (j== 5)
+				{
+					System.out.print(x++);		
+				}
+				else
+				{
+					System.out.print(x+"*");
+					x++;
+				}
+			}
+		}
+		System.out.println();
+	}
+	}
+}
+
+
+Output is :
+
+1*2*3*4*5
+*6*7*8*9
+10*11*12*
+*13*14*15
+16*17*18*19*20
+
 
 ===========================================================================================
 

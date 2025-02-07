@@ -13,20 +13,22 @@ class Question25
 {
 	public static void main(String[] arge)
 	{
-	int x =1;	
+		
 	for (int i=1;i<=3;i++)
 	{
+		int x = i;
 		for (int j=3;j>=i;j--)
 		{
 			System.out.print(" ");
 		}
 		for (int j=1;j<=i;j++)
 		{
-
+			
 			if (i != j && i != 1)
 			{
 				System.out.print(x+"*");
 				x++;
+				
 			}
 			else
 			{
@@ -37,9 +39,10 @@ class Question25
 		System.out.println();
 	}
 
-	int y =2;	
+		
 	for (int i=2;i>=1;i--)
 	{
+		int y = i;
 		for (int j=i;j< 3;j++)
 		{
 			System.out.print(" ");
@@ -59,7 +62,6 @@ class Question25
 			}
 				
 		}
-		y = y - (i-1)-i;
 		System.out.println();
 
 	}
